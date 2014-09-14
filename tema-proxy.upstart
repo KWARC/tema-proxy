@@ -1,0 +1,7 @@
+description "TeMa Search Proxy Server"
+
+start on filesystem
+stop on runlevel [016] or unmounting-filesystem
+
+# Adjust to where you installed tema-proxy.js
+exec node /path/to/tema-proxy.js
